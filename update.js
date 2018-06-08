@@ -16,7 +16,7 @@ fs.readFile(settings.collection_path, function (err, data) {
 			var offset = 0;
 
 			for (var x = 0, xlen = entry.CUE_V2.length; x < xlen; x++) {
-				if (entry.CUE_V2[x].$.TYPE === "0") {
+				if (entry.CUE_V2[x].$.TYPE === "4") {
 					offset = (entry.CUE_V2[x].$.START)/1000;
 					break;
 				}
