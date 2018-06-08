@@ -3,7 +3,9 @@ var util = require('util');
 var parser = require('xml2js');
 var nodeid3 = require('node-id3');
 
-fs.readFile(process.argv[2], function (err, data) {
+var settings = JSON.parse(fs.readFileSync('settings.json', 'utf8'));
+
+fs.readFile(settings.collection_path, function (err, data) {
 	parser.parseString(data, function(err, result) {
 		for (var i = 0, ilen = result.NML.COLLECTION[0].$.ENTRIES; i < ilen; i++) {
 			var entry = (result.NML.COLLECTION[0].ENTRY[i]);
