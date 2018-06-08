@@ -1,0 +1,25 @@
+{
+  "name": "mp3offsetadjuster",
+  "version": "1.0.0",
+  "description": "This is a tool for resident DJs of TheWaveVR to automatically set the proper offset on their MP3 files using Traktor cue points.",
+  "main": "update.js",
+  "dependencies": {
+    "node-id3": "^0.1.5",
+    "sdf-parser": "^3.1.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Splorgman/mp3offsetadjuster.git"
+  },
+  "author": "Splorgman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Splorgman/mp3offsetadjuster/issues"
+  },
+  "homepage": "https://github.com/Splorgman/mp3offsetadjuster#readme"
+}
